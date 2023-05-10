@@ -1,6 +1,17 @@
 # proyecto2023
 Estructura de Proyecto Lab de Compu II - 2023
 
+## Coitzacion de dolar
+Esta pagina corresponde a un modelo de cotizaacion de diferentes tipo de dolar.
+
+## Autores
+* Crostelli, Geronimo
+* Lopez Villagra, Baltasar
+
+## Tecnologias usadas:
+* HTML5
+* CSS
+
 ## Requisitos del Primer Parcial
 
 ### Sobre el Repositorio
