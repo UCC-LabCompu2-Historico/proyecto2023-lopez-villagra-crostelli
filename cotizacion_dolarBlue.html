@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Conversor de Dólar Blue a Peso Argentino</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +9,59 @@
     <meta content="Pagina respecto al cambio de dolar blue en Argentina" name="description">
     <meta content="Lopez Villagra Baltasar, Geronimo Crostelli" name="authors">
     <meta content="dolar, Argentina" name="keywords">
-  </head>
-  <body>
-  <header>
-    <img src="https://images.emojiterra.com/google/android-12l/512px/1f4b2.png" id="logo">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@200&family=Oswald:wght@500&display=swap"
+          rel="stylesheet">
+    <script type="text/javascript" src="misFunciones.js"></script>
+</head>
+<body>
+<header>
+    <img src="imagenes/logo.png" id="logo" alt="logo de la página">
     <h1>Conversor de dólares blue a pesos argentinos</h1>
-  </header>
-  <nav>
+</header>
+<nav>
     <a href="index.html">Inicio</a>
     <a href="cotizacion_dolarBlue.html">Dolar blue</a>
     <a href="infoDolarBlue.html">Info dolar</a>
-  </nav>
-  <section>
+</nav>
+<section>
     <label for="cantidad">Ingrese la cantidad de dólares a convertir:</label>
     <input type="number" id="cantidad" name="cantidad">
     <br>
-    <button>Convertir</button>
+    <button onclick="convertirBlue()">Convertir</button>
     <br>
     <div id="resultado"></div>
-    <script> /*
-      function convertir() {
-        var cantidad = parseFloat(document.getElementById("cantidad").value);
-        var tipoCambio = 472;
-        var resultado = cantidad * tipoCambio;
-        document.getElementById("resultado").innerHTML = "Son " + resultado + " pesos argentinos";
-      } */
-    </script>
     <table>
+        <caption>Tabla de referencia del cambio</caption>
         <tr>
-          <th>Dólares</th>
-          <th>Pesos Argentinos</th>
+            <th>Dólares</th>
+            <th>Pesos Argentinos</th>
         </tr>
         <tr>
-          <td>1</td>
-          <td>472</td>
+            <td>1</td>
+            <td>472</td>
         </tr>
         <tr>
-          <td>10</td>
-          <td>4.720</td>
+            <td>10</td>
+            <td>4.720</td>
         </tr>
         <tr>
-          <td>50</td>
-          <td>23.600</td>
+            <td>50</td>
+            <td>23.600</td>
         </tr>
         <tr>
-          <td>100</td>
-          <td>47.200</td>
+            <td>100</td>
+            <td>47.200</td>
         </tr>
-      </table>
-  </section>
-  <footer>
+    </table>
+    <canvas id="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+</section>
+<script>
+    dibujarSimboloDolar("myCanvas", "green");
+</script>
+<footer>
 
-  </footer>
-    </body>
-  </html>
+</footer>
+</body>
+</html>
