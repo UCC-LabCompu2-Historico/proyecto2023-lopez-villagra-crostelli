@@ -150,6 +150,24 @@ function convertirSolidario() {
 }
 
 
-function mostrarAlerta() {
-    alert("Usuario registrado");
+/**
+ * valida si las casillas estan completas o vacias
+ * * @method validarFormulario
+ * @param
+ * @return (void)
+ */
+function validarFormulario() {
+
+
+
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var email = document.getElementById("email").value;
+
+
+    if (nombre === "" || apellido === "" || email === "") {
+        alert("Usuario no registrado. Casillas incompletas.");
+    } else {
+        alert("Usuario registrado.");
+    }
 }
