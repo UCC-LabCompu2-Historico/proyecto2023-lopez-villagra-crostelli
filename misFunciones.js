@@ -51,3 +51,7 @@ function dibujarSimboloDolar(canvasId, color) {
     context.textBaseline = "middle";
     context.fillText("$", canvas.width / 2, canvas.height / 2);
 }
+
+function mostrarAlerta() {
+    alert("Usuario registrado");
+  }
